@@ -48,7 +48,7 @@ const Navbar = () => {
                     {nav ? <AiOutlineClose size={30} /> 
                         : <AiOutlineMenu size={30} />
                     }
-                </div>
+                </div>  
 
                 <motion.div
                 initial={false} 
