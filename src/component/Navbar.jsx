@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
@@ -36,16 +36,16 @@ const Navbar = () => {
         <div className="fixed top-0 left-0 w-full bg-opactiy-70 backdrop-blur-md z50">
             <div className="max-w-[1300px] mx-auto flex justify-between text-gray-200 text-xl items-center px-12 h-20">
 
-                <a href="#">Pablo</a>
+                <a><Link to="hero" smooth={true} offset={50} duration={500}>Pablo</Link></a>
 
                 <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
                     <li><Link to="skills" smooth={true} offset={50} duration={500}>About</Link></li>
-                    <li><Link to="portfolio" smooth={true} offset={50} duration={500}>Portfolio</Link></li>
+                    <li><Link to="project" smooth={true} offset={50} duration={500}>Project</Link></li>
                     <li><Link to="contact" smooth={true} offset={50} duration={500}>Contact</Link></li>
                 </ul>
 
                 <div onClick={toggleNav} className="md:hidden z-50 text-gray-200">
-                    {nav ? <AiOutlineClose size={30} /> 
+                    {nav ? <AiOutlineClose size={30} />
                         : <AiOutlineMenu size={30} />
                     }
                 </div>  
