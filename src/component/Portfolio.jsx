@@ -2,8 +2,6 @@ import React from 'react';
 import project1 from "../assets/react.svg"
 import project2 from "../assets/react.svg"
 import project4 from "../assets/react.svg"
-import project5 from "../assets/react.svg"
-import project6 from "../assets/react.svg"
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
 
 const projects = [
